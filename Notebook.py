@@ -9,7 +9,7 @@
 # In[2]:
 
 
-get_ipython().run_cell_magic('pyspark', '', "df = spark.read.load('abfss://housepricing@datalakezain.dfs.core.windows.net/input/housing_in_london_monthly_variables.csv', format='csv'\r\n## If\u202fheader\u202fexists\u202funcomment\u202fline\u202fbelow\r\n, header=True\r\n)\r\ndisplay(df.limit(15))\n")
+get_ipython().run_cell_magic('pyspark', '', "df = spark.read.load('abfss://housepricing@enteryourdatalake.dfs.core.windows.net/input/housing_in_london_monthly_variables.csv', format='csv'\r\n## If\u202fheader\u202fexists\u202funcomment\u202fline\u202fbelow\r\n, header=True\r\n)\r\ndisplay(df.limit(15))\n")
 
 
 # In[27]:
