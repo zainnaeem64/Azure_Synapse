@@ -94,6 +94,6 @@ a=spark.read.load('abfss://housepricing@datalakezain.dfs.core.windows.net/input/
 
 # In[59]:
 
-
+a=df.withColumn('rn',expr('row_number() over(partition by code order by houses_sold desc)')).where('rn==2')
 a.show(1)
 
