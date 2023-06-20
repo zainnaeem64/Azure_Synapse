@@ -83,7 +83,7 @@ get_ipython().run_cell_magic('sql', '', "\r\nselect * from yearly_data\r\nwhere 
 # In[57]:
 
 
-get_ipython().run_cell_magic('pyspark', '', "\r\nyearly_data.write.parquet('abfss://housepricing@datalakezain.dfs.core.windows.net/input/yearly_data'+'.parquet') \r\n\r\n")
+get_ipython().run_cell_magic('pyspark', '', "\r\nyearly_data.write.parquet('abfss://housepricing@enteryourdatalake.dfs.core.windows.net/input/yearly_data'+'.parquet') \r\n\r\n")
 
 
 # In[58]:
